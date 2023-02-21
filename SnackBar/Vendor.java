@@ -137,9 +137,9 @@ public class Vendor
     public static double getTotalSales()
     {
         //complete this
-        if(totalSales != 0){
-            totalSales = 0;
-        }
-        return totalSales;
+        double temp = totalSales;
+        temp /= 100;
+        totalSales = 0.0;
+        return temp;
     }
 }
